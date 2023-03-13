@@ -51,6 +51,8 @@ void push(struct stack *p, int x) {
 	}
 	else {  
 		//TODO: Write your code here!
+		p->top=p->top+1;
+		p->data[p->top]=x;
 	}	
 }
 
@@ -67,6 +69,10 @@ int pop(struct stack *p) {
 
 int isEmpty(struct stack *p) {
 	//TODO: Write your code here!
+	if(p->top == -1)
+		return 1;
+    else
+		return 0;
 }
 
 int isFull(struct stack *p) {
