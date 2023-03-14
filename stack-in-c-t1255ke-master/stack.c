@@ -71,7 +71,7 @@ int isEmpty(struct stack *p) {
 	//TODO: Write your code here!
 	if(p->top == -1)
 		return 1;
-    else
+	else
 		return 0;
 }
 
